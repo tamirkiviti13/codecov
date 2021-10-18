@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.4
       - name: Run Argon Scanner
-        uses: docker://argonsecurity/scanner:github
+        uses: docker://argonsecurity/scanner:github-0.1.56-fix-github-diff.1
         env:
           ARGON_SCANNER: https://demo-actions.argon.io
         with:
